@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css">
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+    <header class="bg-blue-200">
+        <div class="max-w-4xl mx-auto px-4 top-0">
+            <div class="flex justify-between items-center py-4">
+
+                <a href="index.html" class="text-xl font-semibold hover:bg-blue-100 p-2 rounded">
+                    Moment 1</a>
+
+                <nav class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:bg-blue-300 p-2 rounded">Startsida</a>
+                    <a href="bulma.html" class="hover:bg-blue-300 p-2 rounded">Bulma</a>
+                    <a href="tailwind.html" class="hover:bg-blue-300 p-2 rounded">Tailwind</a>
+                    <a href="publishing.html" class="hover:bg-blue-300 p-2 rounded">Publicering</a>
+                </nav>
+
+                <button id="menu-btn" class="flex items-center md:hidden">
+                    <span class="text-2xl cursor-pointer">&#9776;</span>
+                </button>
+
+                <nav id="mobile-menu" class="fixed top-12 left-0 w-full text-center hidden md:hidden pb-4 bg-gray-100">
+                    <a href="index.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Startsida</a>
+                    <a href="bulma.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Bulma</a>
+                    <a href="tailwind.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Tailwind</a>
+                    <a href="publishing.html" class="block py-2 hover:bg-gray-300">Publicering</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="p-4 mt-4 md:max-w-3xl md:mx-auto md:shadow-2xl md:rounded-2xl">
+
+        <h2 class="text-2xl text-center font-bold">Tailwind CSS</h2>
+
+        <section class="max-w-4xl mt-4">
+            <h3 class="text-xl text-center">Tabell</h3>
+
+            <table class="my-2 w-full text-left border border-gray-200 rounded-2xl overflow-hidden border-separate border-spacing-0 shadow-md">
+                <thead>
+                    <tr>
+                        <th class="border-r border-gray-200 p-2">Titel</th>
+                        <th class="border-r border-gray-200 p-2">Genre</th>
+                        <th class="border-r border-gray-200 p-2">År</th>
+                        <th class="border-r border-gray-200 p-2">Sett?</th>
+                        <th class="p-2">Kommentar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bg-gray-200 p-4 pr-0">Nyckeln till frihet</td>
+                        <td class="bg-gray-200 p-2">Drama</td>
+                        <td class="bg-gray-200 p-2">1994</td>
+                        <td class="bg-gray-200 p-2">Ja</td>
+                        <td class="bg-gray-200 p-2 ">En otrolig film om hopp och vänskap utspelat i en fängelsemiljö.</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 pr-0">Gudfadern</td>
+                        <td class="p-2">Crime</td>
+                        <td class="p-2">1972</td>
+                        <td class="p-2">Nej</td>
+                        <td class="p-2">Inte sett filmen.</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-gray-200 p-4 pr-0">The Dark Knight</td>
+                        <td class="bg-gray-200 p-2">Superhjältar</td>
+                        <td class="bg-gray-200 p-2">2008</td>
+                        <td class="bg-gray-200 p-2">Nej</td>
+                        <td class="bg-gray-200 p-2">Inte sett filmen.</td>
+                    </tr>
+                    <tr>
+                        <td class="p-4 pr-0">Sagan om ringen: Härskarringen</td>
+                        <td class="p-2">Fantasy</td>
+                        <td class="p-2">2001</td>
+                        <td class="p-2">Ja</td>
+                        <td class="p-2">Fantasyklassiker där man får fälja med på ett fantastiskt spännande äventyr</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-gray-200 p-4 pr-0">Forrest Gump</td>
+                        <td class="bg-gray-200 p-2">Drama</td>
+                        <td class="bg-gray-200 p-2">1994</td>
+                        <td class="bg-gray-200 p-2">Ja</td>
+                        <td class="bg-gray-200 p-2">En tidlös klassiker om kärlek, vänskap och ödet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="max-w-4xl mt-4">
+            <h3 class="text-xl text-center">Formulär</h3>
+
+            <form class="space-y-4">
+                <div>
+                    <label class="block">Titel:</label>
+                    <input type="text" class="w-full border border-gray-300 inset-shadow-sm p-2 rounded" placeholder="Filmens titel">
+                </div>
+
+                <div>
+                    <label class="label">Genre:</label>
+                    <br>
+                    <select class="w-1/5 border border-gray-300 inset-shadow-sm p-2 rounded">
+                        <option>-- Välj --</option>
+                        <option>Action</option>
+                        <option>Komedi</option>
+                        <option>Drama</option>
+                        <option>Crime</option>
+                        <option>Skräck</option>
+                        <option>Romantik</option>
+                        <option>Science fiction</option>
+                        <option>Thriller</option>
+                        <option>Fantasy</option>
+                        <option>Västern</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="label">År:</label> <br>
+                    <input type="number" class="border border-gray-300 inset-shadow-sm p-2 rounded" value="2025" placeholder="Årtalet filmen släpptes">
+                </div>
+
+                <div>
+                    <label class="py-2">Har du sett filmen?</label>
+                    <label class="px-5">Ja
+                        <input type="checkbox">
+                    </label>
+                </div>
+
+
+                <div>
+                    <label class="label">Kommentar:
+                        <textarea class="w-full border border-gray-300 inset-shadow-sm p-2 rounded" value="Inte sett filmen." placeholder="Vad tyckte du om filmen?"></textarea>
+                    </label>
+                </div>
+
+                <div class="text-center">
+                    <button class="bg-green-800 text-white px-4 py-2 mx-3 rounded hover:bg-green-950 cursor-pointer">Submit</button>
+                    <button class="bg-rose-800 text-white px-4 py-2 mx-3 rounded hover:bg-red-950 cursor-pointer">Rensa</button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center p-4 mt-4 bg-blue-200">
+            Laborationsuppgift för kursen DT193G, <br> Fullstack-utveckling med ramverk <br>
+            &copy; 2025 - Ramona Reinholdz
+        </div>
+    </footer>
+</body>
+
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+</html>
