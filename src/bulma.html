@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="js/main.js"></script>
+    <title>Bulma</title>
+</head>
+
+
+<body>
+    <header class="bd-header">
+        <nav class="navbar has-background-info-light" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1><a href="index.html" class="navbar-item title is-2">Moment 1</a></h1>
+
+
+                <a role="button" class="navbar-burger has-text-black" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="index.html" class="navbar-item">
+                        Startsida
+                    </a>
+
+
+                    <a href="bulma.html" class="navbar-item is-active">
+                        Bulma
+                    </a>
+                    <a href="tailwind.html" class="navbar-item">
+                        Tailwind
+                    </a>
+
+
+                    <a href="publishing.html" class="navbar-item">
+                        Publicering
+                    </a>
+                </div>
+
+
+
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container is-max-tablet">
+        <div class="box my-4">
+
+
+            <h2 class="title is-2 has-text-centered">Bulma</h2>
+
+
+            <section class="section pt-0">
+                <h3 class="title is-3 has-text-centered">Tabell</h3>
+
+
+                <div class="table-container">
+                    <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th class="">Titel</th>
+                                <th class="">Genre</th>
+                                <th class="">År</th>
+                                <th class="">Sett?</th>
+                                <th class="">Kommentar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="">Nyckeln till frihet</td>
+                                <td class="">Drama</td>
+                                <td class="">1994</td>
+                                <td class="">Ja</td>
+                                <td class="">En otrolig film om hopp och vänskap utspelat i en fängelsemiljö.</td>
+                            </tr>
+                            <tr>
+                                <td class="">Gudfadern</td>
+                                <td class="">Crime</td>
+                                <td class="">1972</td>
+                                <td class="">Nej</td>
+                                <td class="">Inte sett filmen.</td>
+                            </tr>
+                            <tr>
+                                <td class="">The Dark Knight</td>
+                                <td class="">Superhjältar</td>
+                                <td class="">2008</td>
+                                <td class="">Nej</td>
+                                <td class="">Inte sett filmen.</td>
+                            </tr>
+                            <tr>
+                                <td class="">Sagan om ringen: Härskarringen</td>
+                                <td class="">Fantasy</td>
+                                <td class="">2001</td>
+                                <td class="">Ja</td>
+                                <td class="">Fantasyklassiker där man får fälja med på ett fantastiskt spännande äventyr
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="">Forrest Gump</td>
+                                <td class="">Drama</td>
+                                <td class="">1994</td>
+                                <td class="">Ja</td>
+                                <td class="">En tidlös klassiker om kärlek, vänskap och ödet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section class="section pt-0">
+                <h3 class="title is-3 has-text-centered">Formulär</h3>
+
+
+                <div class="field">
+                    <label class="label">Titel:</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Filmens titel">
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="label">Genre:</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>-- Välj --</option>
+                                <option>Action</option>
+                                <option>Komedi</option>
+                                <option>Drama</option>
+                                <option>Crime</option>
+                                <option>Skräck</option>
+                                <option>Romantik</option>
+                                <option>Science fiction</option>
+                                <option>Thriller</option>
+                                <option>Fantasy</option>
+                                <option>Västern</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <label class="label">År:</label>
+                    <div class="control">
+                        <input class="input" type="number" placeholder="Årtalet filmen släpptes">
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Har du sett filmen?</label>
+                        <label class="label">Ja:
+                            <input type="checkbox">
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="field">
+                    <div class="control">
+                        <label class="label">Kommentar:
+                            <input class="textarea" placeholder="Vad tyckte du om filmen?">
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link is-success">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-danger">Rensa</button>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer has-background-info-light">
+        <div class="content has-text-centered">
+            Laborationsuppgift för kursen DT193G, <br> Fullstack-utveckling med ramverk <br>
+            &copy; 2025 - Ramona Reinholdz
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>
