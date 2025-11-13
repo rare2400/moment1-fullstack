@@ -1,3 +1,4 @@
+//toggle navbar on page styled with Bulma
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
