@@ -2,9 +2,10 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
+    <script src="js/toggleMenu.js" defer></script>
     <title>Tailwind CSS</title>
 </head>
 
@@ -27,11 +28,11 @@
                     <span class="text-2xl cursor-pointer">&#9776;</span>
                 </button>
 
-                <nav id="mobile-menu" class="fixed top-12 left-0 w-full text-center hidden md:hidden pb-4 bg-gray-100">
-                    <a href="index.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Startsida</a>
-                    <a href="bulma.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Bulma</a>
-                    <a href="tailwind.html" class="block py-2 border-b border-gray-600 hover:bg-gray-300">Tailwind</a>
-                    <a href="publishing.html" class="block py-2 hover:bg-gray-300">Publicering</a>
+                <nav id="mobile-menu" class="fixed top-14 left-0 w-full text-center hidden md:hidden pb-4 bg-blue-200">
+                    <a href="index.html" class="block py-2 border-b border-gray-600 hover:bg-blue-300">Startsida</a>
+                    <a href="bulma.html" class="block py-2 border-b border-gray-600 hover:bg-blue-300">Bulma</a>
+                    <a href="tailwind.html" class="block py-2 border-b border-gray-600 hover:bg-blue-300">Tailwind</a>
+                    <a href="publishing.html" class="block py-2 hover:bg-blue-300">Publicering</a>
                 </nav>
             </div>
         </div>
@@ -39,8 +40,50 @@
 
     <main class="">
 
-        <h2 class="text-2xl text-center font-bold">Tailwind CSS</h2>
+        <div class="p-4 mt-4 shadow-md md:max-w-3xl md:mx-auto md:rounded-2xl md:px-10">
 
+            <section>
+                <h2 class="text-2xl text-center font-bold">Tailwind CSS</h2>
+
+                <p class="my-4">
+                    Till en början var Tailwind ovant och det kändes rätt tungt att skriva in många klasser direkt i
+                    HTML-koden, samt ha koll på alla klasser som fanns tillgängliga. Sedan fick jag lära mig att
+                    tillägget Tailwind CSS intellisense fanns att installera till Visual Studio Code, som hjälper till
+                    att hitta klasser och ge alternativ på till exempel färger och storlekar. Detta underlättade mycket
+                    i utvecklingen, men det har ändå tagit lite tid att vänja sig vid denna typ av metod.
+                </p>
+
+                <p class="my-4">
+                    Tailwind CSS är ett utilitybaserat ramverk som bygger på att man applicerar klasser för att styla
+                    element direkt i HTML-koden. Stylingen väljer man alltså själv tillsammans med de utilityklasserna
+                    som finns i ramverket. Det finns alltså inga färdiga komponenter utan man skapar all styling själv,
+                    precis som man gör när man arbetar i en separat CSS-fil. I detta arbete har Tailwinds CLI-verktyg
+                    använts för att skapa en CSS-fil innehållande de klasser som behövs för att styla webbplatsen. Vill
+                    man addera till exempel egna färger att använda kan man skapa sina egna klasser i den CSS-fil som
+                    Tailwind CSS har importerats i.
+                </p>
+
+                <p class="my-4">
+                    Prestandan för webbplatser byggda med Tailwind CSS kan se olika ut beroende på vilken metod man
+                    väljer att använda. Hämtar man CSS-klasserna genom CDN i head-sektionen är det många rader kod som
+                    läses in och det är endast rekomenderat för utveckling, inte för en slutprodukt. I detta arbete har
+                    Tailwind CLI använts som endast skapar en CSS fil anpassad för den koden som används i projektet.
+                    Det finns även möjlighet att minifiera sin CSS när projektet byggs, vilket ger en bättre prestanda.
+                    Därmed är Tailwind CSS ett ramverk som är väl anpassat för att upprätthålla en bra prestanda för
+                    webbplatser som byggs med hjälpa av det.
+                </p>
+
+                <p class="my-4">
+                    Tailwind har mycket dokumentation på sin hemsida, med tydliga exempel och förklaringar för hur det
+                    fungerar. Det är även ett stort community som använder sig av ramverket och det finns forum på
+                    Github och en discord server för att få hjälp av andra användare. Det går även att hitta cheat
+                    sheets publicerade, där man kan får stöd under utvecklingen, för vilka klasser som finns i
+                    ramverket. Ramverket är väl etablerat och används av många utvecklare, det uppdateras även
+                    regelbundet vilket ger en långsiktig trygghet i att använda det. 
+                </p>
+            </section>
+
+        </div>
         <div class="p-4 mt-4 md:max-w-3xl md:mx-auto md:shadow-md md:rounded-2xl md:px-10">
 
             <section class="max-w-4xl mt-4">
@@ -148,7 +191,7 @@
                     <div>
                         <label class="label">Kommentar:
                             <textarea class="w-full border border-gray-300 inset-shadow-sm p-2 rounded"
-                                value="Inte sett filmen." placeholder="Vad tyckte du om filmen?"></textarea>
+                                placeholder="Vad tyckte du om filmen?"></textarea>
                         </label>
                     </div>
 
@@ -172,14 +215,5 @@
         </div>
     </footer>
 </body>
-
-<script>
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
-</script>
 
 </html>
