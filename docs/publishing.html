@@ -44,15 +44,35 @@
     <div class="p-8 mt-0 sm:p-15 md:max-w-3xl md:mx-auto md:my-10 md:shadow-2xl md:rounded-2xl md:px-20">
         <h2 class="text-xl text-center font-bold">Publicering</h2>
 
-        <p class="my-2">Jag har valt att använda github pages för att publicera min webbplats. Tidigare har jag, förutom
-            miun.studenter.se som är ftp-baserat, använt mig av Netlify som publiceringsplattform. Till denna uppgiften
-            har jag valt att testa Github Pages som publiceringsplattform. 
+        <p class="my-2">Jag har valt att använda Github Pages för att publicera min webbplats, som till en början är
+            gratis att använda. Tidigare har jag, förutom miun.studenter.se som är ftp-baserat, använt mig av Netlify
+            för att publicera webbapplikationer. Till denna uppgiften har jag valt att testa Github Pages som
+            publiceringsplattform. Plattformen stöder statiska webbplatser med programmeringssptåk som HTML, CSS och
+            JavaScript, därmed kan den inte hantera backendapplikationer med exempelvis Node.js. Däremot kan
+            frontend-applikationer med API-anrop till publicerade webbtjänster läggas upp med Github Pages. Som tidigare
+            nämnt så är plattformen gratis när det kommer till mer lättviktiga projekt, skulle man däremot behöva mer
+            bandbredd eller vilja ha en egen domän finns det möjlighet till att betala för detta.
         </p>
 
-        Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
-        Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), kostnad, för- och nackdelar och
-        andra saker du tycker är utmärkande.
-        Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.
+        <p class="my-4">
+            Att Github Pages är gratis är en stor fördel då det är mycket tillgängligt för mindre webbapplikationer,
+            eller som i detta fall en mindre skoluppgift. Eftersom Github används som versionshanterare så går det
+            snabbt och enkelt att uppdatera sin publicerade sida, vilket gör det CI/CD (Continiuous Integration &
+            Continiuous Delivery/Deployment). Fördelen med detta är att flera utvecklare kan arbeta i samma projekt, i
+            olika branches för att sedan mergea den till main, som då direkt uppdaterar sidan automatiskt. Man behöver
+            alltså inte tänka på att ladda upp hela projektet till Github, utan det ligger redan där från början
+            eftersom det även används som versionshanterare.
+        </p>
+
+        <p>
+            Plattformen Github Pages stöder inte publicering av exempelvis webbtjänster vilket kan vara en nackdel i de
+            situationer som man arbetar med fullstacks-utveckling. Har man skapat i en backend-applikation behöver den
+            alltså publiceras på en annan plattform, i många fall då med en annan domän. Detta kan kännas som mer jobb
+            för utvecklaren och vid utvecklingen av webbtjänsten behöver man tänka på detaljer som CORS, för att
+            domänerna inte ska krocka vid hämtning av data ur API:et. Min upplevelse av att publicera en webbplats med
+            Github Pages var att det var enkelt och gick väldigt snabbt att gör. Det är även skönt att publicering
+            och versionshantering sker på samma plats, vilket gör publicering enklare.
+        </p>
     </div>
 
 
